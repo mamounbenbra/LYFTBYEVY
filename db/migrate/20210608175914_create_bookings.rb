@@ -1,7 +1,7 @@
 class CreateBookings < ActiveRecord::Migration[6.0]
   def change
     create_table :bookings do |t|
-      t.string :type
+      t.string :massage_type
       t.integer :price
       t.references :user, null: false, foreign_key: true
       t.date :date

@@ -10,7 +10,7 @@
                     input_html: { autocomplete: "email" }%>
         <%= f.input :first_name, :label => "Prénom", autofocus: true,
                     input_html: { autocomplete: "given-name" }%>
-        <%= f.input :phone_number, :label => "Numéro de téléphone", id => "user_phone_number" as: :integer, autofocus: true,
+        <%= f.input :phone_number, :label => "Numéro de téléphone", as: :integer, autofocus: true,
                     input_html: { autocomplete: "tel" }%>
         <%= f.input :last_name, :label => "Nom de famille", autofocus: true,
                     input_html: { autocomplete: "family-name" }%>
@@ -55,9 +55,3 @@
 
 </style>
 
-<script src="path/to/intlTelInput.js"></script>
-<script>
-  var input = document.querySelector("#user_phone_number");
-  window.intlTelInput(input, {
-  });
-</script>

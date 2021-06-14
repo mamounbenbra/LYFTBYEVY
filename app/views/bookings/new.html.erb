@@ -1,0 +1,7 @@
+<div class="container mt-4 col-lg-4 col-md-6 col-sm-12">
+  <h1>New reservation</h1>
+  <%= simple_form_for [@user,@booking] do |f| %>
+    <%= f.input :massage_type, as: :select, collection: Booking::TYPES%>
+    <%= f.input :date %>
+    <%= f.submit "Submit", class:"form-actions btn-perso w-100 mb-2"%>
+    <% end %>
