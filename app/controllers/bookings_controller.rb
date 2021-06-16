@@ -1,5 +1,10 @@
 class BookingsController < ApplicationController
- def new
+
+  def index
+    @bookings = Booking.all
+  end
+
+  def new
     @user = current_user
     @booking = Booking.new
   end
@@ -18,6 +23,7 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:massage_type, :date)
+    params.require(:booking).permit(:time, :location, :massage_type, :date)
   end
+
 end
