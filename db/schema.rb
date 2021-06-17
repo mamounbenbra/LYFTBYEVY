@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_09_060313) do
+ActiveRecord::Schema.define(version: 2021_06_16_232450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,19 @@ ActiveRecord::Schema.define(version: 2021_06_09_060313) do
     t.string "desc"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "time"
+    t.string "location"
     t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string "ville"
+    t.date "start"
+    t.date "end"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_locations_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -37,9 +49,24 @@ ActiveRecord::Schema.define(version: 2021_06_09_060313) do
     t.string "first_name"
     t.string "last_name"
     t.integer "phone_number"
+    t.boolean "admin", default: false
+    t.string "location"
+    t.date "start1"
+    t.date "end1"
+    t.date "start2"
+    t.date "end2"
+    t.date "start3"
+    t.date "end3"
+    t.date "start4"
+    t.date "end4"
+    t.date "start5"
+    t.date "end5"
+    t.date "start6"
+    t.date "end6"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "bookings", "users"
+  add_foreign_key "locations", "users"
 end

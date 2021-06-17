@@ -1,0 +1,11 @@
+<% @bookings.each do |booking| %>
+<div class="card-product mb-4">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+  <p><%= booking.location  %></p>
+  <p><%= booking.massage_type  %></p>
+  <p><%= booking.date  %></p>
+  <p><%= booking.time  %></p>
+  </div>
+</div>
+  <% end %>
