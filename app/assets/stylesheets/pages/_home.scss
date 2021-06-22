@@ -12,28 +12,33 @@ body{
   background-image: url(DSC09601-2.jpg);
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 97vh;
+  margin: 0px;
   background-repeat: none;
+  letter-spacing: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  color: white;
+  letter-spacing: 3px;
 }
 
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9vh;
-  color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.212);
+  height: 8vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: rgba(255, 255, 255, 0.329);
+  margin: 3vh 10px 0px 10px;
   border-radius: 10px;
-  margin: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .nav-links{
   display: flex;
   justify-content: space-around;
-  text-decoration: none;
   margin: 0px;
+  text-decoration: none;
 }
 
 .nav-links li{
@@ -42,7 +47,7 @@ nav{
 }
 
 .nav-links a{
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   letter-spacing: 5px;
   font-family: 'Rajdhani', sans-serif;
@@ -50,9 +55,6 @@ nav{
   letter-spacing: 3px;
 }
 
-.logo{
-  margin-left: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.main{
+  position: relative;
 }
