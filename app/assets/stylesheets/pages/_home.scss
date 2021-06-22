@@ -1,2 +1,58 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(DSC09601-2.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: none;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.212);
+  border-radius: 10px;
+  margin: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.nav-links li{
+  list-style: none;
+  margin-left: 3rem;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.logo{
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
