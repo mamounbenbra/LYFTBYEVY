@@ -1,6 +1,7 @@
 // Specific CSS for your home-page
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 *{
   padding: 0px;
@@ -8,11 +9,33 @@
   box-sizing: border-box;
 }
 
-body{
+.home-writting{
+  position: absolute;
+  bottom: 4rem;
+  right: 2.6rem;
+  margin: 3rem;
+}
+
+.ok{
+  font-family: 'Lobster', cursive;
+  color:#ffb158;
+  font-size: 3rem;
+}
+
+.okk{
+  letter-spacing: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  color:#000000;
+}
+
+.main{
+  position: relative;
+  padding-top: 6vh;
   background-image: url(DSC09601-2.jpg);
   background-size: cover;
   width: 100vw;
-  height: 97vh;
+  height: 100vh;
   margin: 0px;
   background-repeat: none;
   letter-spacing: 5px;
@@ -27,11 +50,10 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  padding-left: 50px;
-  padding-right: 50px;
-  background-color: rgba(255, 255, 255, 0.329);
-  margin: 3vh 10px 0px 10px;
-  border-radius: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-top: rgba(255, 255, 255, 0.342) solid 0.5px;
+  border-bottom: rgba(255, 255, 255, 0.342) solid 0.5px;
 }
 
 .nav-links{
@@ -55,6 +77,11 @@ nav{
   letter-spacing: 3px;
 }
 
-.main{
-  position: relative;
+@media screen and (max-width: 600px) {
+  .home-writting .ok{
+    font-size: 2.5rem;
+  }
+  .home-writting .okk{
+    font-size: 2rem;
+  }
 }
