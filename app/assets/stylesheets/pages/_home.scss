@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 
 *{
   padding: 0px;
@@ -17,8 +19,9 @@
 }
 
 .ok{
-  font-family: 'Lobster', cursive;
-  color:#ffb158;
+  font-family: 'DM Serif Display', serif;
+  color:#ff9a27;
+  letter-spacing: 1px;
   font-size: 3rem;
 }
 
@@ -77,11 +80,18 @@ nav{
   letter-spacing: 3px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+  .home-writting{
+  position: absolute;
+  bottom: 4rem;
+  margin: 1rem;
+  }
   .home-writting .ok{
     font-size: 2.5rem;
+    color: white;
   }
   .home-writting .okk{
     font-size: 2rem;
+    color: white;
   }
 }
