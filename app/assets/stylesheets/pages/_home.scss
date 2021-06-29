@@ -39,7 +39,6 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  margin: 0px;
   background-repeat: none;
   letter-spacing: 5px;
   font-family: 'Rajdhani', sans-serif;
@@ -80,18 +79,64 @@ nav{
   letter-spacing: 3px;
 }
 
+.img_preview{
+  width: 50px;
+}
+
 @media screen and (max-width: 700px) {
   .home-writting{
   position: absolute;
+  right: 0.5rem;
+  left: 0.5rem;
   bottom: 4rem;
   margin: 1rem;
   }
   .home-writting .ok{
-    font-size: 2.5rem;
-    color: white;
+    font-size: 2rem;
+    color:#ffffff;
   }
   .home-writting .okk{
-    font-size: 2rem;
-    color: white;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+  }
+  .main{
+  position: relative;
+  padding-top: 6vh;
+  background: image-url('DSC09601-2.jpg');
+  background-size: cover;
+  background-position-x: -11rem;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: none;
+  letter-spacing: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  color: white;
+  letter-spacing: 3px;
+  }
+  nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: none;
+}
+  .nav-links a{
+  color: #ff9a27;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  }
+  .img_preview{
+  width: 80px;
   }
 }
