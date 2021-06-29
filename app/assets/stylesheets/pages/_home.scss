@@ -88,7 +88,7 @@ nav{
   position: absolute;
   right: 0.5rem;
   left: 0.5rem;
-  bottom: 4rem;
+  bottom: 8rem;
   margin: 1rem;
   }
   .home-writting .ok{
@@ -97,12 +97,12 @@ nav{
   }
   .home-writting .okk{
     font-size: 1.6rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   .main{
   position: relative;
   padding-top: 6vh;
-  background: image-url('DSC09601-2.jpg');
+  background:linear-gradient(to bottom, #ffffff00, #ffa59d8a), image-url('DSC09601-2.jpg');
   background-size: cover;
   background-position-x: -11rem;
   width: 100vw;
