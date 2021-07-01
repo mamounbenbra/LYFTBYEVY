@@ -83,7 +83,7 @@ nav{
   width: 50px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
   .home-writting{
   position: absolute;
   right: 0.5rem;
@@ -116,19 +116,21 @@ nav{
   }
   nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 8vh;
-  padding-left: 70px;
-  padding-right: 70px;
+  height: 5vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
   border: none;
+  margin-top: 4vw;
 }
   .nav-links a{
-  color: #ff9a27;
+  color: #ffffff;
   padding: 10px;
   padding-top: 5px;
+  border: 1px solid white;
   padding-bottom: 5px;
-  background-color: white;
+  background-color: #fedcff5d;
   border-radius: 10px;
   text-decoration: none;
   letter-spacing: 5px;
@@ -138,5 +140,15 @@ nav{
   }
   .img_preview{
   width: 80px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+    .home-writting{
+  position: absolute;
+  right: 0.5rem;
+  left: 0.5rem;
+  bottom: 8rem;
+  margin: 0.1rem;
   }
 }
