@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: white;
+}
+
 .home-writting{
   position: absolute;
   bottom: 4rem;
@@ -107,30 +111,25 @@ nav{
   margin-bottom: 0px;
 }
 
-.card1{
-  height: 60vh;
+.card{
+  min-height: 40vh;
   padding: 30px;
   padding-top: 40px;
   width: auto;
   border: none;
   border-radius: 15px;
   margin-bottom: 30px;
-  margin-top: 90px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.192) 35%, #ffffff7c), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625266838/Screenshot_2021-07-02_at_23.58.55_rm9ef6.png');
+  margin-top: 70px;
   background-size: cover;
 }
-.card2{
-  height: 60vh;
-  padding: 30px;
-  padding-top: 40px;
-  width: auto;
-  border: none;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  margin-top: 90px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+.card1{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.144) 35%, #ffffff7c), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625266838/Screenshot_2021-07-02_at_23.58.55_rm9ef6.png');
 }
+.card2{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.144) 35%, #ffffff7c), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625267480/Screenshot_2021-07-02_at_23.59.11_sv54cb.png');
+}
+
 h1{
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
