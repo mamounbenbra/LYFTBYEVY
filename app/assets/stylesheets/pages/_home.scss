@@ -35,7 +35,7 @@
 .main{
   position: relative;
   padding-top: 6vh;
-  background: image-url('DSC09601-2.jpg');
+  background: image-url('DS09601-2.jpg');
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -107,7 +107,13 @@ nav{
   margin-bottom: 0px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
+  .main{
+    background-position: -10rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .home-writting{
   position: absolute;
   right: 0.5rem;
@@ -126,9 +132,10 @@ nav{
   .main{
   position: relative;
   padding-top: 6vh;
-  background: image-url('DSC09560.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, #FCA1A1), image-url('DSC09560.jpg');
   background-size: cover;
   width: 100vw;
+  background-position: 0rem;
   height: 83vh;
   background-repeat: none;
   letter-spacing: 5px;
@@ -151,9 +158,9 @@ nav{
   color: #ffffff;
   padding: 10px;
   padding-top: 5px;
-  border: 1px solid rgb(255, 122, 122);
+  border: 1px solid rgb(255, 255, 255);
   padding-bottom: 5px;
-  background-color: #fedcff5d;
+  background-color: #ffffff3f;
   border-radius: 10px;
   text-decoration: none;
   letter-spacing: 5px;
