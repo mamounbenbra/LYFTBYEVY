@@ -35,7 +35,7 @@
 .main{
   position: relative;
   padding-top: 6vh;
-  background: image-url('DS09601-2.jpg');
+  background: url("https://res.cloudinary.com/mamounbenbra/image/upload/v1625249042/yes-3_tx3was.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -108,12 +108,6 @@ nav{
 }
 
 @media screen and (max-width: 1050px) {
-  .main{
-    background-position: -10rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
   .home-writting{
   position: absolute;
   right: 0.5rem;
@@ -132,7 +126,7 @@ nav{
   .main{
   position: relative;
   padding-top: 6vh;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, #FCA1A1), image-url('DSC09560.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, #FCA1A1), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625248848/yes_khrn3a.jpg');
   background-size: cover;
   width: 100vw;
   background-position: 0rem;
