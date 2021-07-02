@@ -107,6 +107,42 @@ nav{
   margin-bottom: 0px;
 }
 
+.card1{
+  height: 60vh;
+  padding: 30px;
+  padding-top: 40px;
+  width: auto;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  margin-top: 90px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.192) 35%, #ffffff7c), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625266838/Screenshot_2021-07-02_at_23.58.55_rm9ef6.png');
+  background-size: cover;
+}
+.card2{
+  height: 60vh;
+  padding: 30px;
+  padding-top: 40px;
+  width: auto;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  margin-top: 90px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+h1{
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  color:white;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+.new{
+  background-color: white
+}
+
 @media screen and (max-width: 570px) {
   .home-writting{
   position: absolute;
