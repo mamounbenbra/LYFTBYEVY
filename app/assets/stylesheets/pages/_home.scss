@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 
 *{
   padding: 0px;
@@ -94,6 +94,7 @@ nav{
   background-color: rgba(255, 122, 122, 0.678);
   height: auto;
   padding: 80px;
+  margin-top: 80px;
   align-items: center;
 }
 
@@ -112,37 +113,57 @@ nav{
 }
 
 .card{
-  min-height: 40vh;
+  height: 80vh;
   padding: 30px;
-  padding-top: 40px;
   width: auto;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-bottom: 30px;
   margin-top: 70px;
   background-size: cover;
+  border: 4px solid rgba(255, 109, 109, 0.603);
 }
 
-.card1{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.144) 35%, #ffffff7c), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625266838/Screenshot_2021-07-02_at_23.58.55_rm9ef6.png');
-}
-.card2{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.144) 35%, #ffffff7c), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625267480/Screenshot_2021-07-02_at_23.59.11_sv54cb.png');
+.img{
+  width: auto;
+  max-height: 30vh;
+  margin: 4px;
+  margin-top: 0px;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 h1{
   text-align: center;
-  font-family: 'Rajdhani', sans-serif;
-  color:white;
-  letter-spacing: 1px;
+  font-family: 'Cairo', sans-serif;
+  color:rgb(255, 109, 109);
+  letter-spacing: 3px;
   font-size: 2rem;
 }
 
 .new{
-  background-color: white
+  background-color: white;
+  margin: 1rem;
+}
+
+.new p{
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color:#ff5959;
 }
 
 @media screen and (max-width: 570px) {
+
+  .img{
+    max-height: 40vh;
+  }
+
+  .card{
+    height: auto;
+  }
+
   .home-writting{
   position: absolute;
   right: 0.5rem;
@@ -202,6 +223,7 @@ h1{
   }
   .r{
     padding: 40px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 400px) {
