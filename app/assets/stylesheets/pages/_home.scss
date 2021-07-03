@@ -115,7 +115,7 @@ nav{
 .card{
   position: relative;
   min-height: 75vh;
-  max-height: 90vh;
+  max-height: 80vh;
   padding: 30px;
   width: auto;
   border: none;
@@ -208,7 +208,7 @@ p .new{
 
 .savoir{
   position: absolute;
-  bottom: 3rem;
+  bottom: 4rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -231,7 +231,8 @@ p .new{
   }
 
   .card{
-    height: 70vh;
+    height: 65vh;
+    min-height: 65vh;
   }
 
   .home-writting{
@@ -252,7 +253,7 @@ p .new{
   .main{
   position: relative;
   padding-top: 6vh;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, #fbcda2), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625248848/yes_khrn3a.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, rgb(255, 207, 162)), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625248848/yes_khrn3a.jpg');
   background-size: cover;
   width: 100vw;
   background-position: 0rem;
@@ -318,5 +319,8 @@ p .new{
   }
   .r{
     padding: 10px;
+  }
+  .card{
+    height: 100vh;
   }
 }
