@@ -308,8 +308,8 @@ p .new{
   }
 
   .card{
-    height: 65vh;
-    min-height: 65vh;
+    height: 55vh;
+    min-height: 55vh;
   }
 
   .home-writting{
@@ -374,6 +374,11 @@ p .new{
   }
   .card{
     height: 80vh;
+  }
+}
+@media screen and (width: 375px) {
+  .card{
+    height: 75vh;
   }
 }
 
