@@ -269,6 +269,51 @@ p .new{
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+   .card{
+    min-height: 60vh;
+   }
+   .nav-links a{
+     color: rgb(255, 255, 255);
+     font-size: 1.6rem;
+     padding: 5px 10px;
+     border: white solid 2px;
+     border-radius: 10px;
+   }
+  nav{
+     border: none;
+  }
+   .img_preview {
+    width: 100px;
+  }
+  .main{
+    background-position-x: -15rem;
+  }
+
+}
+@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+   .card{
+    min-height: 45vh;
+   }
+   .nav-links a{
+     color: rgb(255, 255, 255);
+     font-size: 1.6rem;
+     padding: 5px 10px;
+     border: white solid 2px;
+     border-radius: 10px;
+   }
+  nav{
+     border: none;
+  }
+   .img_preview {
+    width: 100px;
+  }
+  .main{
+    background-position-x: -20rem;
+  }
+}
+
 @media screen and (max-width: 570px) {
 
   .img{
@@ -308,7 +353,7 @@ p .new{
   .main{
   position: relative;
   padding-top: 6vh;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, rgb(255, 207, 162)), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625248848/yes_khrn3a.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgb(255, 207, 162)), url('https://res.cloudinary.com/mamounbenbra/image/upload/v1625248848/yes_khrn3a.jpg');
   background-size: cover;
   width: 100vw;
   background-position: 0rem;
@@ -330,20 +375,13 @@ p .new{
   border: none;
   margin-top: 4vw;
 }
-  .nav-links a{
-  color: #ffffff;
-  padding: 10px;
-  padding-top: 5px;
-  border: 1px solid rgb(255, 255, 255);
-  padding-bottom: 5px;
-  background-color: #ffffff3f;
-  border-radius: 10px;
-  text-decoration: none;
-  letter-spacing: 5px;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
-  letter-spacing: 3px;
-  }
+   .nav-links a{
+     color: rgb(255, 255, 255);
+     font-size: 1.3rem;
+     padding: 5px 10px;
+     border: white solid 2px;
+     border-radius: 10px;
+   }
   .img_preview{
   width: 80px;
   }
@@ -352,10 +390,13 @@ p .new{
     margin-top: 0px;
   }
 }
-@media screen and (max-width: 400px) {
-.second{
+@media screen and (max-width: 414px) {
+  .second{
     font-size: 1.5rem;
     text-align: justify;
+  }
+  .card{
+    height: 80vh;
   }
 }
 
@@ -377,5 +418,8 @@ p .new{
   }
   .card{
     height: 100vh;
+  }
+  .img{
+    height: 25vh;
   }
 }
