@@ -269,8 +269,7 @@ p .new{
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){
    .card{
     min-height: 60vh;
    }
@@ -289,28 +288,6 @@ p .new{
   }
   .main{
     background-position-x: -15rem;
-  }
-
-}
-@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
-   .card{
-    min-height: 45vh;
-   }
-   .nav-links a{
-     color: rgb(255, 255, 255);
-     font-size: 1.6rem;
-     padding: 5px 10px;
-     border: white solid 2px;
-     border-radius: 10px;
-   }
-  nav{
-     border: none;
-  }
-   .img_preview {
-    width: 100px;
-  }
-  .main{
-    background-position-x: -20rem;
   }
 }
 
