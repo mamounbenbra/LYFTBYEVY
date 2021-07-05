@@ -49,7 +49,7 @@
       <p>Plus qu’un soin, le Lyft by Evy est un voyage sensoriel singulier qui sublime la beauté de chaque femme. </p>
     </div>
 </div>
-<div class="row flex-column justify-content-center align-items-center mb-5 ">
+<div class="row flex-column justify-content-center align-items-center">
   <div class="yay">
     <p class='new1'>new!</p>
     <p class="mb-5 yay1 text-center">A partir de l’automne 2021, des <strong>formations</strong> en ligne seront proposées pour les <strong>professionnels!</strong></p>
@@ -57,10 +57,14 @@
   </div>
 </div>
 <div class="footer">
-<div class="r">
-  <div class="second">
-      <p>footer</p>
+  <%= link_to("https://www.instagram.com/lyftbyevy/") do %>
+                  <i class="icon fab fa-instagram"></i>
+  <% end %>
+  <div class='logo'>
+      <%=image_tag('https://res.cloudinary.com/mamounbenbra/image/upload/v1624923536/SIGLE_LYFT_BY_EVY_OR_ynxj3f.png', :class => "img_preview")%>
     </div>
-  </div>
+  <%= link_to("https://www.facebook.com/profile.php?id=100009249302877") do %>
+                  <i class="icon fab fa-facebook-f"></i>
+  <% end %>
 </div>
 

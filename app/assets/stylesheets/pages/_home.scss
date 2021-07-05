@@ -248,6 +248,7 @@ p .new{
   border-radius: 9px;
   border: solid 2px rgb(255, 144, 132) ;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 
 }
 .new1{
@@ -272,6 +273,20 @@ p .new{
   color:#797979;
 }
 
+.footer{
+  height: 25vh;
+  width: 100vw;
+  background-color: #ffbe82;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0px 150px
+}
+.icon{
+  color: white;
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){
    .card{
@@ -299,6 +314,10 @@ p .new{
 
   .img{
     max-height: 30vh;
+  }
+
+  .footer{
+    padding: 30px;
   }
 
   .yay{
