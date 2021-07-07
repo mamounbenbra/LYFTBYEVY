@@ -11,6 +11,7 @@
   </nav>
   <div class="home-writting text-center">
       <h1 class='ok'>Evy Cifaï - facialiste</h1>
+      <h1 class='okk1 d-block d-sm-none'>Evy Cifaï facialiste</h1>
       <h4 class='okk'>Paris & Casablanca</h4>
     </div>
   </div>
@@ -27,7 +28,7 @@
       <p class="soin">Soin #1</p>
       <h1 class="mt-2 mb-4">Lyft By Evy</h1>
       <p>visage / energétique</p>
-      <h3 class='savoir'>en savoir plus</h3>
+       <%= link_to "en savoir plus", lyft_path, class: "savoir" %>
       <h4 class="heure">90min</h4>
       <h5 class="price">150€</h5>
     </div>
@@ -38,7 +39,7 @@
       <p class="soin">Soin #2</p>
       <h1 class="n mt-2 mb-4">Drainage Renata França</h1>
       <p>corps / tonique</p>
-      <h3 class='savoir'>en savoir plus</h3>
+      <%= link_to "en savoir plus", renata_path, class: "savoir" %>
       <h4 class="heure">90min</h4>
       <h5 class="price">150€</h5>
     </div>

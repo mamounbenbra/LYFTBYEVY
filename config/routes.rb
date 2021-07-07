@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   resources :bookings, only: [:new, :create]
   end
 
+  get '/renata', to: 'pages#renata', as: 'renata'
+  get '/lyft', to: 'pages#lyft', as: 'lyft'
   get :bookings, to: 'bookings#index'
 end

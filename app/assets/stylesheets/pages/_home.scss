@@ -216,6 +216,7 @@ p .new{
   left: 0;
   right: 0;
   margin: auto;
+  text-decoration: none;
   text-align: center;
   padding: 10px;
   width: auto;
@@ -225,6 +226,14 @@ p .new{
   background-color:rgb(255, 207, 162);
   border-radius: 10px;
   width: 10rem;
+    &:hover{
+      text-decoration: none;
+      background-color: transparent;
+      border: 0.4px solid rgb(255, 207, 162);
+      color: rgb(252, 183, 119);
+      border-radius: 10px;
+      transition: 0.5s ease-in-out;
+    }
 }
 
 .savoir1{
@@ -346,6 +355,16 @@ p .new{
     font-size: 2rem;
     color:rgb(255, 255, 255);
   }
+
+  .okk1{
+    font-size: 2.7rem;
+    color:rgb(255, 255, 255);
+  }
+
+  .ok{
+    display: none;
+  }
+
   .home-writting .okk{
     font-size: 1.6rem;
     color: rgb(255, 255, 255);
