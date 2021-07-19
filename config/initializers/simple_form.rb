@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 #
+
 # Uncomment this and change the path if necessary to include your own
 # components.
 # See https://github.com/heartcombo/simple_form#custom-components to know
@@ -13,6 +14,8 @@ SimpleForm.setup do |config|
   # wrapper, change the order or even add your own to the
   # stack. The options given below are used to wrap the
   # whole input.
+  config.label_text = lambda { |label, required| "#{label}" }
+
   config.wrappers :default, class: :input,
     hint_class: :field_with_hint, error_class: :field_with_errors, valid_class: :field_without_errors do |b|
     ## Extensions enabled by default
