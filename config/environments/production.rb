@@ -124,3 +124,6 @@ Rails.application.configure do
     authentication:       'plain',
     enable_starttls_auto: true  }
 end
+
+#http://www.google.com/accounts/DisplayUnlockCaptcha
+#pour arranger le bail des mails
