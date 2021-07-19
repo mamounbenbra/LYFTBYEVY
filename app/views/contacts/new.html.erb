@@ -1,8 +1,10 @@
-<div class="container mt-4 col-lg-4 col-md-6 col-sm-12">
-  <h1 class='mb-4'>Contactez-moi !</h1>
+<div class="container contactez col-lg-4 col-md-6 col-sm-12">
+  <h1 class='mb-5 con'>Contactez-moi !</h1>
   <%= simple_form_for [@contact] do |f| %>
     <%= f.input :name, :label => "Nom"%>
     <%= f.input :email, :label => "Email"%>
     <%= f.input :message, as: :text%>
-    <%= f.submit "Submit", class:"btn btn-primary w-100"%>
+    <%= f.submit "Envoyer", class:"btn btn-primary w-100"%>
     <% end %>
+
+
