@@ -13,6 +13,9 @@
 
 body{
   background-color: white;
+  font-size: 1.2rem;
+  color:rgb(102, 102, 102);
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .home-writting{
@@ -239,6 +242,59 @@ p .new{
       transition: 0.5s ease-in-out;
     }
 }
+
+.env{
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+  background-color:rgb(255, 207, 162);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 30px;
+  margin-top: 10px;
+    &:hover{
+      text-decoration: none;
+      background-color: transparent;
+      border: 0.4px solid rgb(255, 207, 162);
+      color: rgb(252, 183, 119);
+      border-radius: 10px;
+      transition: 0.5s ease-in;
+    }
+}
+
+.form-group {
+    margin-bottom: 1.3rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.05rem;
+}
+
+abbr[title="required"] {
+  display: none;
+}
+
+.ret{
+  margin-top: 40px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+  border: 0.4px solid black;
+  font-size: 1rem;
+  color: rgb(112, 112, 112);
+  font-family: 'Cairo', sans-serif;
+    &:hover{
+      border-radius: 10px;
+      transition: 0.5s ease-in-out;
+      text-decoration: none;
+      color: #000000;
+    }
+}
+
 
 .savoir1{
   padding: 10px;
