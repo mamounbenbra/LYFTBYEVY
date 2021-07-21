@@ -288,12 +288,12 @@ abbr[title="required"] {
   text-decoration: none;
   text-align: center;
   padding: 5px 10px;
-  border: 0.4px solid black;
+  border: 0.2px solid rgb(182, 182, 182);
   font-size: 1rem;
   color: rgb(112, 112, 112);
   font-family: 'Cairo', sans-serif;
     &:hover{
-      border-radius: 10px;
+      border-radius: 5px;
       transition: 0.5s ease-in-out;
       text-decoration: none;
       color: #000000;
@@ -510,7 +510,7 @@ abbr[title="required"] {
 
 @media screen and (width: 375px) {
   .card{
-    height: 100px;
+    height: 72vh;
   }
 }
 
