@@ -129,6 +129,20 @@ nav{
   }
 }
 
+.lyft{
+  width: 100vw;
+  background-color: #ffbe82;
+  color: white;
+  height: auto;
+}
+
+.lyft1{
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .card{
   position: relative;
   min-height: 75vh;
@@ -180,6 +194,11 @@ nav{
   object-fit: cover;
 }
 
+.imgR{
+  max-height: 50vh;
+  border-radius: 10px;
+}
+
 .soin {
   position: absolute;
   top: -20px;
@@ -199,7 +218,14 @@ h1{
 }
 
 h1.n{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  color: #ffbe82;
+}
+
+h1.n1{
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
 }
 
 .new{
@@ -298,8 +324,8 @@ abbr[title="required"] {
   margin-top: 40px;
   text-decoration: none;
   text-align: center;
-  padding: 5px 10px;
-  border: 0.2px solid rgb(182, 182, 182);
+  padding: 3px 10px;
+  border: 0.2px solid rgb(219, 219, 219);
   font-size: 1rem;
   color: rgb(112, 112, 112);
   font-family: 'Cairo', sans-serif;

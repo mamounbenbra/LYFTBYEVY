@@ -1,0 +1,8 @@
+  <h1 class='mb-5 con'>Rajoute une Question!</h1>
+    <%= simple_form_for [@question] do |f| %>
+        <%= f.input :tipe, as: :select, collection: Question::OUI%>
+        <%= f.input :question, :label => "Question"%>
+        <%= f.input :answer, :label => "Reponse", as: :text%>
+        <%= f.submit "Envoyer", class:"env w-100"%>
+      <% end %>
+        <%= link_to "Retour à la page d'accueil", root_path, class:"ret mb-1 mt-4 w-50" %>
