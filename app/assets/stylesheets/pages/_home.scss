@@ -123,6 +123,12 @@ nav{
   margin-bottom: 0px;
 }
 
+.avoir{
+  &:hover{
+    color: rgb(252, 183, 119) !important;
+  }
+}
+
 .card{
   position: relative;
   min-height: 75vh;
@@ -135,6 +141,11 @@ nav{
   margin-top: 70px;
   background-size: cover;
   border: 4px solid #fbcda2;
+    &:hover{
+        border-radius: 15px;
+        border: 4px solid #ffb672;
+        transition: 0.5s ease-in;
+    }
 }
 
 .card p{
@@ -408,6 +419,10 @@ abbr[title="required"] {
 }
 
 @media screen and (max-width: 570px) {
+
+  .euh{
+    display: none;
+  }
 
   .img{
     max-height: 30vh;
