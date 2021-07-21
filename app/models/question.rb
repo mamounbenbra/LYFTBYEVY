@@ -1,6 +1,6 @@
 class Question < ApplicationRecord
-  OUI=["Lyft By Evy", "Drainage Renata Franca"]
-  attribute :tipe, presence: true
-  attribute :question, presence: true
-  attribute :answer, presence: true
+  validates :tipe, presence: true
+  validates :question, presence: true
+  validates :answer, presence: true
+  OUI = ["Lyft By Evy", "Drainage Renata Franca"]
 end

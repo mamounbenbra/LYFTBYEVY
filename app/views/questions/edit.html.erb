@@ -1,8 +1,8 @@
 <div class="d-flex justify-content-center">
-  <div class="text-start mt-5 col-lg-5 col-md-7 col-sm-12">
-    <h1 class='mb-5 con'>Rajoute une Question!</h1>
+  <div class="text-center mt-5 col-lg-5 col-md-7 col-sm-12">
+    <h1 class='mb-5 con'>On modifie!</h1>
       <%= simple_form_for @question do |f| %>
-          <%= f.input :tipe, :label => "Type de Massage", as: :select, collection: Question::OUI%>
+          <%= f.input :tipe, as: :select, collection: Question::OUI%>
           <%= f.input :question, :label => "Question"%>
           <%= f.input :answer, :label => "Reponse", as: :text%>
           <%= f.submit "Envoyer", class:"env w-100"%>
@@ -10,4 +10,3 @@
           <%= link_to "Retour à la page d'accueil", root_path, class:"ret mb-1 mt-4 w-50" %>
   </div>
 </div>
-

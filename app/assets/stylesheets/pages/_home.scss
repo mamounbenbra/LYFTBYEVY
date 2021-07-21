@@ -11,6 +11,29 @@
   box-sizing: border-box;
 }
 
+.yes5{
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  color: white;
+}
+
+.ques{
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: 'Cairo', sans-serif;
+  line-height: 2.1rem;
+}
+
+.repo{
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
 body{
   background-color: white;
   font-size: 1.2rem;
@@ -95,7 +118,8 @@ nav{
 }
 
 .contactez{
-  padding-top: 2rem;
+  padding: 2rem;
+  margin-top: 1rem;
 }
 
 .r{
@@ -126,6 +150,15 @@ nav{
 .avoir{
   &:hover{
     color: rgb(252, 183, 119) !important;
+  }
+}
+
+.laavoir{
+  color: white;
+  font-size: 1.5rem !important;
+  &:hover{
+    color: rgb(255, 255, 255) !important;
+    text-decoration: solid white 2px;
   }
 }
 
@@ -446,6 +479,16 @@ abbr[title="required"] {
 
 @media screen and (max-width: 570px) {
 
+  .repo{
+  font-size: 1.6rem !important;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+  .lyft1{
+    padding: 20px;
+  }
+
   .euh{
     display: none;
   }
@@ -473,6 +516,17 @@ abbr[title="required"] {
     min-height: 70vh;
   }
 
+  .yes4{
+    width: 100vw;
+    background-color: white
+  }
+
+  .question{
+    font-size: 4rem !important;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+
+  }
   .home-writting{
   position: absolute;
   right: 0.5rem;

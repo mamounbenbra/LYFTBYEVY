@@ -7,21 +7,33 @@
     </div>
     <ul class='nav-links'>
       <li>
-        <%= link_to "contact", new_contact_path, :class => "avoir" %>
+        <%= link_to "contact", new_contact_path, :class => "laavoir" %>
       </li>
     </ul>
   </nav>
   <div class="row justify-content-center">
     <div class="lyft1 justify-content-center col-md-8 col-sm-12 col-lg-6">
-        <h1 class="n1 mt-2 mb-4">Drainage Renata França</h1>
-        <p class='text-justify'>Une nouvelle façon de revisiter le drainage du corps. C’est d’abord un massage très tonique non douloureux. Le ventre dégonfle, les jambes s’affinent et la qualité de la peau est comme gainée et lissée. Les résultats se perçoivent dès la première séance. Les femmes enceintes peuvent aussi bénéficier de ce drainage. Ce drainage s’adresse à toutes les femmes qui souhaitent embellir leur ligne, la qualité de leur pe
+        <h1 class="n1 mt-4 mb-5">Drainage Renata França</h1>
+        <p class='text-justify repo'>Une nouvelle façon de revisiter le drainage du corps. C’est d’abord un massage très tonique non douloureux. Le ventre dégonfle, les jambes s’affinent et la qualité de la peau est comme gainée et lissée. Les résultats se perçoivent dès la première séance. Les femmes enceintes peuvent aussi bénéficier de ce drainage. Ce drainage s’adresse à toutes les femmes qui souhaitent embellir leur ligne.
         </p>
     </div>
   </div>
-   <h1 class="n1 mt-2 mb-4">Q&A</h1>
+   <h1 class="n1 mt-2 mb-2" style='color: #808080 !important'>Q&A</h1>
     <% if user_signed_in? %>
-       <%= link_to "Ajouter une question", new_question_path %>
+       <%= link_to new_question_path do %>
+       <i class="fas yes5 fa-plus-circle"></i>
+       <% end %>
     <% end %>
+      <div class="container contactez col-lg-8 col-md-12 col-sm-12">
+        <% @questions.each do |question|  %>
+          <p class="text-justify ques"><%= question.question %></p>
+          <p class="text-justify repo" style='color: #808080 !important'><%= question.answer %></p>
+          <% if user_signed_in? %>
+             <p class='text-white'><%= link_to 'delete', question_path(question), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+             <p class='text-white'><%= link_to 'edit', edit_question_path(question) %></p>
+          <% end %>
+        <% end %>
+      </div>
   <div class="footer">
     <%= link_to("https://www.instagram.com/lyftbyevy/") do %>
       <i class="icon fab fa-instagram"></i>
