@@ -13,12 +13,24 @@
   </nav>
   <div class="row justify-content-center">
     <div class="lyft1 justify-content-center col-md-8 col-sm-12 col-lg-6">
-        <h1 class="n1 mt-4 mb-5">Lyft By Evy</h1>
+    <div class="la d-flex flex-column align-items-center justify-content-center">
+        <h1 class="n1 mt-5 mb-3">Lyft By Evy</h1>
+        <p class="soin1 mb-5">Soin #1</p>
+         </div>
         <p class='text-justify repo'>Un soin à la fois énergétique et holisique où je masse les muscles du visage pour un effet lifté et repulpé des traits du visage. Ce soin « glow effect » est magique car il permet un lâcher-prise totale du corps et des pensées. On se sent comme en apesanteur entre ciel et terre.
         </p>
     </div>
   </div>
    <h1 class="n1 mt-2 mb-2" style='color: #808080 !important'>Q&A</h1>
+   <%= form_tag lyft_path, method: :get do %>
+<div class="d-flex mt-5 justify-content-center container align-items-center">
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control lala col-lg-4 col-md-7 col-sm-10",
+    placeholder: "Cherchez un mot!"%>
+  <%= submit_tag "Chercher", class: "ml-4 m-0  col-lg-1 col-md-2 col-sm-2 env1 w-auto" %>
+<% end %>
+</div>
     <% if user_signed_in? %>
        <%= link_to new_question_path do %>
        <i class="fas yes5 fa-plus-circle"></i>

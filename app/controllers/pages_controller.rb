@@ -5,15 +5,21 @@ class PagesController < ApplicationController
   end
 
   def lyft
-    @questions =  Question.where(tipe: "Lyft By Evy")
+    if params[:query].present?
+      sql_query = "question ILIKE :query OR answer ILIKE :query"
+      @questions = Question.where(sql_query, query: "%#{params[:query]}%").where(tipe: "Lyft By Evy")
+    else
+      @questions =  Question.where(tipe: "Lyft By Evy")
+    end
   end
 
   def renata
-     if params[:query].present?
+    if params[:query].present?
       sql_query = "question ILIKE :query OR answer ILIKE :query"
-      @questions = Question.where(sql_query, query: "%#{params[:query]}%")
+      @questions = Question.where(sql_query, query: "%#{params[:query]}%").where(tipe: "Drainage Renata Franca")
     else
       @questions =  Question.where(tipe: "Drainage Renata Franca")
     end
   end
+
 end
