@@ -19,6 +19,24 @@
     </div>
   </div>
    <h1 class="n1 mt-2 mb-2" style='color: #808080 !important'>Q&A</h1>
+
+
+
+
+<%# = form_tag renata_path, method: :get do %>
+  <%#= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a movie"
+  %>
+  <%#= submit_tag "Search", class: "btn btn-primary" %>
+<%# end %>
+
+
+
+
+
+
     <% if user_signed_in? %>
        <%= link_to new_question_path do %>
        <i class="fas yes5 fa-plus-circle"></i>

@@ -19,19 +19,21 @@
   text-decoration: none;
    &:hover{
      color: rgb(129, 129, 129);
-     text-decoration: none !important;
+
    }
 }
+
 .yes7{
   font-size: 2.5rem;
   margin-top: 0rem;
-  color: rgb(255, 204, 108);
+  color: rgb(236, 255, 70);
   display: flex;
   justify-content: center;
   text-decoration: none;
    &:hover{
-     color: rgb(255, 214, 34);
-     text-decoration: none !important;
+     color: rgb(208, 255, 0);
+     display: inline-block;
+     text-decoration: none;
    }
 }
 
@@ -44,7 +46,8 @@
   text-decoration: none;
    &:hover{
      color: rgb(255, 2, 2);
-     text-decoration: none !important;
+     display: inline-block;
+     text-decoration: none;
    }
 }
 
@@ -390,7 +393,7 @@ abbr[title="required"] {
   text-decoration: none;
   text-align: center;
   padding: 3px 10px;
-  border: 0.2px solid rgb(219, 219, 219);
+  border: 0.2px solid #888888;
   font-size: 1rem;
   color: rgb(112, 112, 112);
   font-family: 'Cairo', sans-serif;
@@ -401,16 +404,28 @@ abbr[title="required"] {
       color: #000000;
     }
 }
-
+.form-control{
+  border: none;
+  border-bottom: 1px solid #ffe4cb;
+  border-top: 1px solid #ffe4cb;
+}
 
 .savoir1{
   padding: 10px;
   font-size: 1rem;
   color: white;
   font-family: 'Cairo', sans-serif;
-  background-color:rgb(255, 98, 81);
+  background-color:#FF6250;
   border-radius: 10px;
   width: 10rem;
+  &:hover{
+    color: #FF6250;
+    background-color: rgb(255, 255, 255);
+    border: solid 0.5px #FF6250;
+    padding: 9px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
 }
 
 .ic{
@@ -445,7 +460,7 @@ abbr[title="required"] {
   position: relative;
   background-color: rgb(255, 255, 255);
   border-radius: 9px;
-  border: solid 2px rgb(255, 144, 132) ;
+  border: solid 2px #FF6250 ;
   margin-top: 4rem;
   margin-bottom: 4rem;
 
@@ -455,7 +470,7 @@ abbr[title="required"] {
   top: -20px;
   left: -20px;
   padding: 23px 15px;
-  background-color: rgb(255, 98, 81);
+  background-color: #FF6250;
   border-radius: 50%;
   text-align: center;
   letter-spacing: 2px;
@@ -485,6 +500,10 @@ abbr[title="required"] {
 }
 .icon{
   color: white;
+    &:hover{
+      zoom: 110%;
+      transition: 1s ease;
+    }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){

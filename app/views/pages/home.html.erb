@@ -56,12 +56,12 @@
   <div class="yay">
     <p class='new1'>new!</p>
     <p class="mb-5 yay1 text-center">A partir de l’automne 2021, des <strong>formations</strong> en ligne seront proposées pour les <strong>professionnels!</strong></p>
-    <p class="text-center m-0 savoir1">en savoir plus</p>
+        <%= link_to "contactez-moi!", new_contact_path, :class => "text-center m-0 savoir1" %>
   </div>
 </div>
 <div class="footer">
   <%= link_to("https://www.instagram.com/lyftbyevy/") do %>
-                  <i class="icon fab fa-instagram"></i>
+    <i class="icon fab fa-instagram"></i>
   <% end %>
   <div class='logo'>
       <%= link_to root_path do  %>
@@ -69,7 +69,7 @@
     <% end  %>
     </div>
   <%= link_to("https://www.facebook.com/profile.php?id=100009249302877") do %>
-                  <i class="icon fab fa-facebook-f"></i>
+    <i class="icon fab fa-facebook-f"></i>
   <% end %>
 </div>
  <% if user_signed_in? %>
