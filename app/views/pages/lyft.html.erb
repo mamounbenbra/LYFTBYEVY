@@ -7,28 +7,36 @@
     </div>
     <ul class='nav-links'>
       <li>
-        <%= link_to "contact", new_contact_path, :class => "avoir" %>
+        <%= link_to "contact", new_contact_path, :class => "laavoir" %>
       </li>
     </ul>
   </nav>
   <div class="row justify-content-center">
     <div class="lyft1 justify-content-center col-md-8 col-sm-12 col-lg-6">
-        <h1 class="n1 mt-2 mb-4">Lyft By Evy</h1>
-        <p class='text-justify'>Une nouvelle façon de revisiter le drainage du corps. C’est d’abord un massage très tonique non douloureux. Le ventre dégonfle, les jambes s’affinent et la qualité de la peau est comme gainée et lissée. Les résultats se perçoivent dès la première séance. Les femmes enceintes peuvent aussi bénéficier de ce drainage. Ce drainage s’adresse à toutes les femmes qui souhaitent embellir leur ligne ou la qualité de leur peau.
+        <h1 class="n1 mt-4 mb-5">Lyft By Evy</h1>
+        <p class='text-justify repo'>Une nouvelle façon de revisiter le drainage du corps. C’est d’abord un massage très tonique non douloureux. Le ventre dégonfle, les jambes s’affinent et la qualité de la peau est comme gainée et lissée. Les résultats se perçoivent dès la première séance. Les femmes enceintes peuvent aussi bénéficier de ce drainage. Ce drainage s’adresse à toutes les femmes qui souhaitent embellir leur ligne.
         </p>
     </div>
   </div>
-   <h1 class="n1 mt-2 mb-4">Q&A</h1>
+   <h1 class="n1 mt-2 mb-2" style='color: #808080 !important'>Q&A</h1>
     <% if user_signed_in? %>
-       <%= link_to "Ajouter une question", new_question_path %>
+       <%= link_to new_question_path do %>
+       <i class="fas yes5 fa-plus-circle"></i>
+       <% end %>
     <% end %>
-      <div class="yes4 justify-content-center col-md-8 col-sm-12 col-lg-6">
+      <div class="container contactez col-lg-8 col-md-12 col-sm-12">
         <% @questions.each do |question|  %>
-          <p class="text-danger"><%= question.question %></p>
-          <p class="text-white"><%= question.answer %></p>
+          <p class="text-justify ques"><%= question.question %></p>
+          <p class="text-justify repo" style='color: #808080 !important'><%= question.answer %></p>
           <% if user_signed_in? %>
-            <%= link_to 'delete', question_path(question), method: :delete, data: { confirm: 'Are you sure?' } %>
-            <%= link_to 'edit', edit_question_path(question) %></p>
+          <div class="d-flex justify-content-center align-items-center mb-5">
+             <%= link_to question_path(question), method: :delete, data: { confirm: 'Are you sure?' } do %>
+             <i class="yes6 mr-5 fas fa-trash-alt"></i>
+             <% end %>
+             <%= link_to edit_question_path(question) do %>
+             <i class="fas yes7 fa-pen"></i>
+             <% end %>
+          </div>
           <% end %>
         <% end %>
       </div>
@@ -44,3 +52,9 @@
     <% end %>
   </div>
 </div>
+ <% if user_signed_in? %>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+<% end %>
+
+
+
