@@ -13,30 +13,24 @@
   </nav>
   <div class="row justify-content-center">
     <div class="lyft1 justify-content-center col-md-8 col-sm-12 col-lg-6">
-        <h1 class="n1 mt-4 mb-5">Drainage Renata França</h1>
+     <div class="la d-flex flex-column align-items-center justify-content-center">
+        <h1 class="n1 mt-5 mb-3">Drainage Renata França</h1>
+        <p class="soin1 mb-5">Soin #2</p>
+         </div>
         <p class='text-justify repo'>Une nouvelle façon de revisiter le drainage du corps. C’est d’abord un massage très tonique non douloureux. Le ventre dégonfle, les jambes s’affinent et la qualité de la peau est comme gainée et lissée. Les résultats se perçoivent dès la première séance. Les femmes enceintes peuvent aussi bénéficier de ce drainage. Ce drainage s’adresse à toutes les femmes qui souhaitent embellir leur ligne.
         </p>
     </div>
   </div>
    <h1 class="n1 mt-2 mb-2" style='color: #808080 !important'>Q&A</h1>
-
-
-
-
-<%# = form_tag renata_path, method: :get do %>
-  <%#= text_field_tag :query,
+<%= form_tag renata_path, method: :get do %>
+<div class="d-flex mt-5 justify-content-center container align-items-center">
+  <%= text_field_tag :query,
     params[:query],
-    class: "form-control",
-    placeholder: "Find a movie"
-  %>
-  <%#= submit_tag "Search", class: "btn btn-primary" %>
-<%# end %>
-
-
-
-
-
-
+    class: "form-control lala col-lg-4 col-md-7 col-sm-10",
+    placeholder: "Cherchez un mot!"%>
+  <%= submit_tag "Chercher", class: "ml-4 m-0  col-lg-1 col-md-2 col-sm-2 env1 w-auto" %>
+<% end %>
+</div>
     <% if user_signed_in? %>
        <%= link_to new_question_path do %>
        <i class="fas yes5 fa-plus-circle"></i>
