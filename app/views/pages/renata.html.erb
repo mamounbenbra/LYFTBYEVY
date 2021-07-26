@@ -22,8 +22,8 @@
     </div>
   </div>
    <h1 class="n1 mt-2 mb-2" style='color: #808080 !important'>Q&A</h1>
-<%= form_tag renata_path, method: :get do %>
-<div class="d-flex mt-5 justify-content-center container align-items-center">
+<%= form_tag '/renata#lol', method: :get do %>
+<div id="lol" class=" d-flex mt-5 justify-content-center container align-items-center">
   <%= text_field_tag :query,
     params[:query],
     class: "form-control lala col-lg-4 col-md-7 col-sm-10",
@@ -42,7 +42,7 @@
           <p class="text-justify repo" style='color: #808080 !important'><%= question.answer %></p>
           <% if user_signed_in? %>
           <div class="d-flex justify-content-center align-items-center mb-5">
-             <%= link_to question_path(question), method: :delete, data: { confirm: 'Are you sure?' } do %>
+             <%= link_to question_path(question), method: :delete, data: { confirm: 'Supprimer cette question?' } do %>
              <i class="yes6 mr-5 fas fa-trash-alt"></i>
              <% end %>
              <%= link_to edit_question_path(question) do %>
@@ -53,19 +53,19 @@
         <% end %>
       </div>
   <div class="footer">
-    <%= link_to("https://www.instagram.com/lyftbyevy/") do %>
+    <%= link_to("https://www.instagram.com/lyftbyevy/", target: "_blank") do %>
       <i class="icon fab fa-instagram"></i>
     <% end %>
     <div class='logo'>
         <%=image_tag('https://res.cloudinary.com/mamounbenbra/image/upload/v1624923536/SIGLE_LYFT_BY_EVY_OR_ynxj3f.png', :class => "img_preview")%>
       </div>
-    <%= link_to("https://www.facebook.com/profile.php?id=100009249302877") do %>
+    <%= link_to("https://www.facebook.com/profile.php?id=100009249302877", target: "_blank") do %>
                     <i class="icon fab fa-facebook-f"></i>
     <% end %>
   </div>
 </div>
  <% if user_signed_in? %>
-  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "laavoir" %>
 <% end %>
 
 

@@ -60,7 +60,7 @@
   </div>
 </div>
 <div class="footer">
-  <%= link_to("https://www.instagram.com/lyftbyevy/") do %>
+  <%= link_to("https://www.instagram.com/lyftbyevy/", target: "_blank") do %>
     <i class="icon fab fa-instagram"></i>
   <% end %>
   <div class='logo'>
@@ -68,10 +68,10 @@
       <%=image_tag('https://res.cloudinary.com/mamounbenbra/image/upload/v1624923536/SIGLE_LYFT_BY_EVY_OR_ynxj3f.png', :class => "img_preview")%>
     <% end  %>
     </div>
-  <%= link_to("https://www.facebook.com/profile.php?id=100009249302877") do %>
+  <%= link_to("https://www.facebook.com/profile.php?id=100009249302877", target: "_blank") do %>
     <i class="icon fab fa-facebook-f"></i>
   <% end %>
 </div>
  <% if user_signed_in? %>
-  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "yesss" %>
 <% end %>
