@@ -1,16 +1,5 @@
 <div class='lyft pt-5'>
-  <nav>
-    <div class='logo'>
-    <%= link_to root_path do  %>
-      <%=image_tag('https://res.cloudinary.com/mamounbenbra/image/upload/v1624923536/SIGLE_LYFT_BY_EVY_OR_ynxj3f.png', :class => "img_preview")%>
-    <% end  %>
-    </div>
-    <ul class='nav-links'>
-      <li>
-        <%= link_to "contact", new_contact_path, :class => "laavoir" %>
-      </li>
-    </ul>
-  </nav>
+   <%= render "shared/nav" %>
   <div class="row justify-content-center">
     <div class="lyft1 justify-content-center col-md-8 col-sm-12 col-lg-6">
      <div class="la d-flex flex-column align-items-center justify-content-center">
@@ -52,20 +41,6 @@
           <% end %>
         <% end %>
       </div>
-  <div class="footer">
-    <%= link_to("https://www.instagram.com/lyftbyevy/", target: "_blank") do %>
-      <i class="icon fab fa-instagram"></i>
-    <% end %>
-    <div class='logo'>
-        <%=image_tag('https://res.cloudinary.com/mamounbenbra/image/upload/v1624923536/SIGLE_LYFT_BY_EVY_OR_ynxj3f.png', :class => "img_preview")%>
-      </div>
-    <%= link_to("https://www.facebook.com/profile.php?id=100009249302877", target: "_blank") do %>
-                    <i class="icon fab fa-facebook-f"></i>
-    <% end %>
-  </div>
-</div>
- <% if user_signed_in? %>
-  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "laavoir" %>
-<% end %>
+ <%= render "shared/footer" %>
 
 

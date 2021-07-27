@@ -7,8 +7,10 @@ class QuestionsController < ApplicationController
 
     def create
       @question = Question.new(question_params)
-      if @question.save
-        redirect_to root_path, :notice => 'La question a été ajoutée!'
+      if @question.save && @question.tipe == "Drainage Renata Franca"
+        redirect_to renata_path, :notice => 'La question a été ajoutée!'
+      elsif @question.save && @question.tipe == "Lyft By Evy"
+        redirect_to lyft_path, :notice => 'La question a été ajoutée!'
       else
         render :new
       end
