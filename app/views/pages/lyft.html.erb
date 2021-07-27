@@ -11,8 +11,8 @@
     </div>
   </div>
    <h1 class="n1 mt-2 mb-2" style='color: #808080 !important'>Q&A</h1>
-   <%= form_tag lyft_path, method: :get do %>
-<div class="d-flex mt-5 justify-content-center container align-items-center">
+   <%= form_tag ('/lyft#lil'), method: :get do %>
+<div id='lil' class="d-flex mt-5 justify-content-center container align-items-center">
   <%= text_field_tag :query,
     params[:query],
     class: "form-control lala col-lg-4 col-md-7 col-sm-10",
