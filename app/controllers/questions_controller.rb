@@ -22,14 +22,23 @@ class QuestionsController < ApplicationController
 
     def update
       @question = Question.find(params[:id])
-      @question.update(question_params)
-      redirect_to root_path
+      if @question.update(question_params) && @question.tipe == "Drainage Renata Franca"
+        redirect_to renata_path, :notice => 'La question a été bien modifié!'
+      elsif @question.update(question_params) && @question.tipe == "Lyft By Evy"
+        redirect_to lyft_path, :notice => 'La question a été bien modifié!'
+      else
+        render :new
+      end
     end
 
     def destroy
       @question = Question.find(params[:id])
       @question.destroy
-      redirect_to root_path
+      if @question.tipe == "Drainage Renata Franca"
+      redirect_to renata_path, :notice => 'La question a été supprimé.'
+      else
+        redirect_to lyft_path, :notice => 'La question a été supprimé.'
+      end
     end
 
   private
