@@ -13,6 +13,9 @@ class PagesController < ApplicationController
     end
   end
 
+  def reservation
+  end
+
   def renata
     if params[:query].present?
       sql_query = "question ILIKE :query OR answer ILIKE :query"

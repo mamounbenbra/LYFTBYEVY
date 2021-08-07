@@ -3,8 +3,10 @@
       <i class="icon fab fa-instagram"></i>
     <% end %>
     <div class='logo'>
+      <%= link_to root_path do %>
         <%=image_tag('https://res.cloudinary.com/mamounbenbra/image/upload/v1624923536/SIGLE_LYFT_BY_EVY_OR_ynxj3f.png', :class => "img_preview")%>
-      </div>
+      <% end %>
+    </div>
     <%= link_to("https://www.facebook.com/profile.php?id=100009249302877", target: "_blank") do %>
                     <i class="icon fab fa-facebook-f"></i>
     <% end %>

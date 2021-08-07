@@ -1,3 +1,7 @@
+ <% if user_signed_in? %>
+  <%= link_to "Espace client/réservation", reservation_path, class: "dropdown-item" %>
+<% end %>
+
 <div class="main">
   <nav class='pt'>
     <div class='logo'>

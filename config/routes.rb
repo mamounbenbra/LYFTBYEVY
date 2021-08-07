@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :questions
   resources :contacts, only: [:new, :create]
+  get '/reservation', to: 'pages#reservation', as: 'reservation'
   get '/contacts', to: 'contacts#new', as:'contact'
   get '/create1', to: 'contacts#create1', as:'create1'
   get '/renata', to: 'pages#renata', as: 'renata'
