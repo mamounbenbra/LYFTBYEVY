@@ -25,9 +25,10 @@ require("channels")
 // External imports
 import "bootstrap";
 
-// Internal imports, e.g:
-import { listHover } from "../channels/card";
+// Internal imports, e.g:s
+import { initFlatpickr } from "../plugins/flatpickr";
 
+initFlatpickr();
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
