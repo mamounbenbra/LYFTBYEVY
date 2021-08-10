@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'time_slots/new'
+  get 'time_slots/create'
+  get 'jours/new', as: 'newdate'
+  get 'jours/create'
   devise_for :users
   resources :users do
     resources :bookings, only: [:new, :create]

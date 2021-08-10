@@ -1,0 +1,10 @@
+  hello <%= current_user.first_name %> !
+
+<div class="container mt-4 col-lg-11 col-md-6 col-sm-12">
+  <h1>Nouvelle journée</h1>
+  <%= simple_form_for [@jour] do |f| %>
+  <div class="d-flex flex-column">
+    <%= f.input :day, as: :string, required: false, input_html: { class: "label-hidden datepicker"} %>
+    <%= f.submit "Submit", class:"form-actions btn-perso w-40 mb-2"%>
+  </div>
+    <% end %>
