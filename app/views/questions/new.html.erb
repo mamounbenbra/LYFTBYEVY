@@ -2,7 +2,7 @@
   <div class="text-start mt-5 col-lg-5 col-md-7 col-sm-12">
     <h1 class='mb-5 con'>Rajoute une Question!</h1>
       <%= simple_form_for @question do |f| %>
-          <%= f.input :tipe, :label => "Type de Massage", as: :select, collection: Question::OUI%>
+          <%= f.input :tipe, :label => "Type de Massage", as: :radio_buttons, collection: Question::OUI%>
           <%= f.input :question, :label => "Question"%>
           <%= f.input :answer, :label => "Reponse", as: :text%>
           <%= f.submit "Envoyer", class:"env w-100"%>

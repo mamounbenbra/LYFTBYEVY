@@ -2,7 +2,7 @@
   <div class="text-center mt-5 col-lg-5 col-md-7 col-sm-12">
     <h1 class='mb-5 con'>On modifie!</h1>
       <%= simple_form_for @question do |f| %>
-          <%= f.input :tipe, as: :select, collection: Question::OUI%>
+          <%= f.input :tipe, as: :radio_buttons, collection: Question::OUI%>
           <%= f.input :question, :label => "Question"%>
           <%= f.input :answer, :label => "Reponse", as: :text%>
           <%= f.submit "Envoyer", class:"env w-100"%>
