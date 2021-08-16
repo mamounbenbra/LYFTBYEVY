@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
 
 *{
   padding: 0px;
@@ -89,7 +90,7 @@ a{
 
 .repo{
   font-size: 1.3rem;
-  color: #ffffff;
+  color:#808080;
   margin-bottom: 2rem;
 }
 
@@ -109,7 +110,7 @@ body{
 
 .ok{
   font-family: 'DM Serif Display', serif;
-  color:#ffb36c;
+  color:#ff8b1e;
   letter-spacing: 1px;
   font-size: 3rem;
 }
@@ -197,6 +198,7 @@ nav{
   color: white;
   letter-spacing: 2px;
   font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
   font-size: 1.7rem;
   margin: 0px;
   padding: 0px;
@@ -275,7 +277,7 @@ nav{
   letter-spacing: 2px;
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.5rem;
-  color:#ffbe82;
+  color:#797979;
 }
 
 .img{
@@ -600,7 +602,7 @@ abbr[title="required"] {
 
   .repo{
   font-size: 1.4rem !important;
-  color: #ffffff;
+  color: #808080;
   margin-bottom: 2rem;
 }
 
