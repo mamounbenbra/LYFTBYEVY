@@ -13,3 +13,4 @@ class Contact < MailForm::Base
     }
   end
 end
+
