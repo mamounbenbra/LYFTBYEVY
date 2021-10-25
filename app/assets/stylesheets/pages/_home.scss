@@ -133,6 +133,10 @@ body{
   margin: 0px;
 }
 
+.row1{
+  margin-bottom: -50px;
+}
+
 .main{
   position: relative;
   padding-top: 6vh;
@@ -202,6 +206,16 @@ nav{
 }
 
 .second{
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.second2{
   color: white;
   letter-spacing: 2px;
   font-family: 'Rajdhani', sans-serif;
@@ -349,7 +363,7 @@ h1.n1{
 
 .new{
   background-color: white;
-  margin: 1rem;
+  margin-top: 0.5rem !important;
 }
 
 p .new{
@@ -562,6 +576,13 @@ abbr[title="required"] {
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.5rem;
   color:#797979;
+}
+.yay3{
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  color:#ffbe82;
 }
 
 .footer{

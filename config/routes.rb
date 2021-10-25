@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get '/create1', to: 'contacts#create1', as:'create1'
   get '/renata', to: 'pages#renata', as: 'renata'
   get '/lyft', to: 'pages#lyft', as: 'lyft'
+  get '/rituel', to: 'pages#rituel', as: 'rituel'
   get :bookings, to: 'bookings#index'
 end

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :renata, :lyft]
+  skip_before_action :authenticate_user!, only: [:home, :renata, :lyft, :rituel]
 
   def home
   end
