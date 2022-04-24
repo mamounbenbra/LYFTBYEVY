@@ -144,7 +144,6 @@ Devise.setup do |config|
   # Default is 0.days, meaning the user cannot access the website without
   # confirming their account.
   # config.allow_unconfirmed_access_for = 2.days
-  config.secret_key = '-- secret key -'
   
 
   # A period that the user is allowed to confirm their account before their
