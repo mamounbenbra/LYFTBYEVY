@@ -23,6 +23,8 @@ gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'mail_form', '~> 1.9'
 
+gem 'psych', '< 4'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
