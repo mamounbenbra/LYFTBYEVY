@@ -25,6 +25,7 @@ gem 'mail_form', '~> 1.9'
 
 gem 'psych', '< 4'
 
+gem 'net-smtp', require: false
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
