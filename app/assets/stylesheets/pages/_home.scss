@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 *{
   padding: 0px;
@@ -91,7 +93,6 @@ a{
 .ques{
   color: #ffffff;
   font-size: 2rem;
-  font-family: 'Cairo', sans-serif;
   line-height: 2.1rem;
 }
 
@@ -104,8 +105,10 @@ a{
 body{
   background-color: white;
   font-size: 1.2rem;
-  color:rgb(102, 102, 102);
-  font-family: 'Rajdhani', sans-serif;
+  color:rgb(0, 0, 0);
+  //font-family: 'Rajdhani', sans-serif;
+  //font-family: 'Tenor Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 .home-writting{
@@ -126,7 +129,7 @@ body{
 }
 
 .ok{
-  font-family: 'DM Serif Display', serif;
+  //font-family: 'DM Serif Display', serif;
   color:#ff8b1e;
   letter-spacing: 1px;
   font-size: 3rem;
@@ -134,7 +137,6 @@ body{
 
 .okk{
   letter-spacing: 5px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 2rem;
   color:#494949;
 }
@@ -156,7 +158,6 @@ body{
   height: 100vh;
   background-repeat: none;
   letter-spacing: 5px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 15px;
   color: white;
   letter-spacing: 3px;
@@ -189,7 +190,6 @@ nav{
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 5px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 15px;
   letter-spacing: 3px;
 }
@@ -208,7 +208,7 @@ nav{
   display: flex;
   justify-content: center;
   justify-content: center;
-  background-color: rgb(255, 193, 136);
+  background-color: #ffc5900f;
   height: auto;
   padding: 80px;
   margin-top: 80px;
@@ -216,9 +216,8 @@ nav{
 }
 
 .second{
-  color: white;
+  color: rgb(57, 57, 57);
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
   font-size: 1.7rem;
   margin: 0px;
@@ -228,7 +227,6 @@ nav{
 .second2{
   color: white;
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
   font-size: 1.7rem;
   margin: 0px;
@@ -291,14 +289,12 @@ nav{
 .card p{
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 1rem;
   color:#797979;
 }
 .card h4{
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 1.5rem;
   color:#797979;
 }
@@ -306,7 +302,6 @@ nav{
   //price
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 1.5rem;
   color:#797979;
 }
@@ -336,7 +331,7 @@ nav{
 }
 
 .yesss{
-  color: red;
+  color: rgb(232, 105, 105);
   margin-top: 30px;
   padding: 10px;
   text-align: center;
@@ -354,7 +349,7 @@ nav{
 
 h1{
   text-align: center;
-  font-family: 'Cairo', sans-serif;
+  //font-family: 'Cairo', sans-serif;
   color:#ffbe82;
   letter-spacing: 3px;
   font-size: 2rem;
@@ -379,7 +374,6 @@ h1.n1{
 p .new{
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 1rem;
   color:#797979;
 }
@@ -393,7 +387,6 @@ p .new{
 .price {
   position: absolute;
   bottom: 2px;
-  font-family: 'Cairo', sans-serif;
   left: 15px;
 }
 
@@ -409,7 +402,7 @@ p .new{
   width: auto;
   font-size: 1rem;
   color: white;
-  font-family: 'Cairo', sans-serif;
+  //font-family: 'Cairo', sans-serif;
   background-color:rgb(255, 207, 162);
   border-radius: 10px;
   width: 10rem;
@@ -429,7 +422,7 @@ p .new{
   padding: 10px;
   font-size: 1rem;
   color: white;
-  font-family: 'Cairo', sans-serif;
+  //font-family: 'Cairo', sans-serif;
   background-color:rgb(255, 207, 162);
   border-radius: 10px;
   border: none;
@@ -452,7 +445,7 @@ p .new{
   padding: 7px;
   font-size: 1rem;
   color:#ffb36c;
-  font-family: 'Cairo', sans-serif;
+  //font-family: 'Cairo', sans-serif;
   background-color:rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
@@ -497,7 +490,7 @@ abbr[title="required"] {
   border: 0.2px solid #888888;
   font-size: 1rem;
   color: rgb(112, 112, 112);
-  font-family: 'Cairo', sans-serif;
+  //font-family: 'Cairo', sans-serif;
     &:hover{
       border-radius: 5px;
       transition: 0.5s ease-in-out;
@@ -512,20 +505,21 @@ abbr[title="required"] {
 }
 
 .savoir1{
-  padding: 10px;
-  font-size: 1rem;
-  color: white;
-  font-family: 'Cairo', sans-serif;
-  background-color:#FF6250;
+  padding: 25px;
+  font-size: 1.4rem;
+  color: #ff6250;
+  //font-family: 'Cairo', sans-serif;
+  background-color:#ff625024;
   border-radius: 10px;
-  width: 10rem;
   &:hover{
-    color: #FF6250;
-    background-color: rgb(255, 255, 255);
-    border: solid 0.5px #FF6250;
-    padding: 9px;
     text-decoration: none;
-    transition: 0.3s ease;
+    color: #ff6250;
+   // color: #FF6250;
+    //background-color: rgb(255, 255, 255);
+   // border: solid 0.5px #FF6250;
+   // padding: 9px;
+   // text-decoration: none;
+   // transition: 0.3s ease;
   }
 }
 
@@ -548,7 +542,7 @@ abbr[title="required"] {
 
 .yessir{
   margin-top: 50px;
-    font-family: 'Cairo', sans-serif;
+    //font-family: 'Cairo', sans-serif;
     color: rgb(252, 183, 119);
 }
 
@@ -560,37 +554,33 @@ abbr[title="required"] {
   flex-direction: column;
   position: relative;
   background-color: rgb(255, 255, 255);
-  border-radius: 9px;
-  border: solid 2px #FF6250 ;
+  border-radius: 8px;
+  border: solid 5px #ffcfca;
   margin-top: 4rem;
   margin-bottom: 4rem;
 
 }
-.new1{
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  padding: 23px 15px;
-  background-color: #FF6250;
-  border-radius: 50%;
-  text-align: center;
-  letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.2rem;
-  color:#ffffff;
-
-}
+//.new1{
+  // position: absolute;
+  // top: -20px;
+  // left: -20px;
+  // padding: 23px 15px;
+  // background-color: #ff625024;
+  // border-radius: 50%;
+  // text-align: center;
+  // letter-spacing: 2px;
+  // font-size: 1.2rem;
+  // color:#ff6250;
+// }
 .yay1{
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 1.5rem;
-  color:#797979;
+  color:#000000;
 }
 .yay3{
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 2rem;
   color:#ffbe82;
 }
@@ -686,7 +676,7 @@ abbr[title="required"] {
 
   .question{
     font-size: 4rem !important;
-    font-family: 'Cairo', sans-serif;
+    //font-family: 'Cairo', sans-serif;
     color: white;
 
   }
@@ -725,7 +715,6 @@ abbr[title="required"] {
   height: 83vh;
   background-repeat: none;
   letter-spacing: 5px;
-  font-family: 'Rajdhani', sans-serif;
   font-size: 15px;
   color: rgb(0, 0, 0);
   letter-spacing: 3px;
