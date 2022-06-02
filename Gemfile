@@ -23,6 +23,8 @@ gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'mail_form', '~> 1.9'
 
+gem 'net-smtp', require: false
+
 gem 'psych', '< 4'
 
 gem 'net-smtp', require: false
