@@ -11,4 +11,13 @@ environment.plugins.prepend('Provide',
     Popper: ['popper.js', 'default']
   })
 );
+
+environment.config.merge({
+  resolve: {
+    alias: {
+      jquery: 'jquery/src/jquery',
+    }
+  }
+});
+
 module.exports = environment
