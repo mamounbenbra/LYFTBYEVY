@@ -119,13 +119,14 @@ Rails.application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'lyftbyevy.herokuapp.com',
-    #user_name:            ENV["GMAIL_EMAIL"],
     user_name:            'lyftbyevy1@gmail.com',
     password:             'Mondsee137',
-    #password:             ENV["GMAIL_PASSWORD"],
     authentication:       'plain',
     enable_starttls_auto: true  }
 end
 
 #http://www.google.com/accounts/DisplayUnlockCaptcha
 #pour arranger le bail des mails
+
+#user_name:            ENV["GMAIL_EMAIL"],
+#password:             ENV["GMAIL_PASSWORD"],
