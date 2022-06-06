@@ -8,11 +8,11 @@
     <% end %>
   </div>
   <h1 class='mb-5 con'>Contactez-moi sur evy.cifai@gmail.com</h1>
-    <%#= simple_form_for [@contact] do |f| %>
-        <%#= f.input :name, :error => "Nom Obligatoire", :label => "Nom"%>
-        <%#= f.input :email, :label => "Email"%>
-        <%#= f.input :message, :error => "Message Obligatoire", as: :text%>
-        <%#= f.submit "Envoyer", class:"env w-100"%>
-      <%# end %>
+    <%= simple_form_for [@contact] do |f| %>
+        <%= f.input :name, :error => "Nom Obligatoire", :label => "Nom"%>
+        <%= f.input :email, :label => "Email"%>
+        <%= f.input :message, :error => "Message Obligatoire", as: :text%>
+        <%= f.submit "Envoyer", class:"env w-100"%>
+      <% end %>
         <%= link_to "Retour à la page d'accueil", root_path, class:"ret mb-1 mt-4 w-50" %>
   </div>
